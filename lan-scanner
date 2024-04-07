@@ -1,4 +1,12 @@
 #!/bin/bash
+# call:
+# lan-scanner
+# collection of scripts using /dev/tcp fork from fijimunkii/bash-dev-tcp
+# ini after fork: 7.4.2024, 11:38:24
+# 
+# hints:
+# dl: curl -skO https://raw.githubusercontent.com/pflegende/bash-dev-tcp/master/lan-scanner
+# tested on jor1k - not yet
 IPS=$(ifconfig \
   | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' \
   | grep -Eo '([0-9]*\.){3}[0-9]*' \
@@ -15,3 +23,4 @@ do
     done
   done
 done
+# EOT of lan-scanner
