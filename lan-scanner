@@ -1,9 +1,13 @@
 #!/bin/bash
 # call:
 # lan-scanner
+# 
 # collection of scripts using /dev/tcp fork from fijimunkii/bash-dev-tcp
 # ini after fork: 7.4.2024, 11:38:24
 # 
+# use: (striktly only with bash)
+# . ./lan-scanner
+#
 # hints:
 # dl: curl -skO https://raw.githubusercontent.com/pflegende/bash-dev-tcp/master/lan-scanner
 # tested on jor1k - not yet
